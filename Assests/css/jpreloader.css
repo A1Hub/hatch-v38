@@ -1,0 +1,46 @@
+#jpreOverlay {
+	background: url(../images/hatch-favicon/Hatch-slogan.gif) center no-repeat #000000;
+	background-size: 120px !important;
+	position: absolute;
+	padding-bottom: 150px;
+}
+#jpreSlide {
+	font-size: 22px;
+	color: #ccc;
+	background-position: right 10px top 20px;
+	text-align: center;
+	width: 50%;
+	height: 30%;
+}
+#jpreLoader {
+	width: 40% !important;
+	height: 2px;
+	background: #111;
+	border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	top: 60% !important;
+}
+#jpreBar {
+	background: #222;
+	border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+}
+#jprePercentage {
+	color: rgba(0, 0, 0, 0.068);
+	z-index: -1;
+	font-family: "gilroy-light", Arial, Helvetica, sans-serif;
+	text-align: center;
+	margin-top: 10px;
+	font-size: 96px;
+	margin-top: -10px;
+}
+#jSplash {
+	line-height: 200%;
+}
+#jSplash section {
+	padding: 0;
+	display: block;
+	background: none !important;
+}

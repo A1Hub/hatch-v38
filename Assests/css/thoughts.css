@@ -1,0 +1,337 @@
+#thoughts>article {
+	display: flex;
+	flex-wrap: wrap;
+}
+figure {
+	background: rgba(15, 15, 15, 0.336);
+	width: calc( 50% + 1px);
+	height: 100vh;
+	margin: 0 auto 10vh 0;
+	position: sticky;
+	top: 0;
+	overflow: hidden;
+	box-shadow: 4px -4px 8px rgba(0, 0, 0, .4);
+}
+figure::after {
+	content: '';
+	position: absolute;
+	top: 5vmin;
+	right: 5vmin;
+	bottom: 5vmin;
+	left: 45%;
+	outline-offset: -5vmin;
+	backdrop-filter: grayscale(1);
+	pointer-events: none;
+}
+figure:nth-of-type(2n)::after {
+	right: 45%;
+	left: 5vmin;
+}
+.thoughts-post {
+	background: #000000;
+	width: calc(50% + 1px);
+	height: 100vh;
+	margin: 0 0 10vh auto;
+	position: sticky;
+	top: 0;
+	overflow: hidden;
+	padding: 5vmin;
+}
+figure:nth-of-type(1), .thoughts-post:nth-of-type(1) {
+	margin: 0 0 10vh 0;
+	width: 50%;
+}
+figure:nth-of-type(2n) {
+	margin: 0 0 10vh auto;
+	box-shadow: -4px -4px 8px rgba(0, 0, 0, .4);
+}
+.thoughts-post:nth-of-type(2n) {
+	margin: 0 auto 10vh 0;
+	box-shadow: 4px -4px 8px rgba(0, 0, 0, .4);
+}
+figure:last-of-type, .thoughts-post:last-of-type {
+	margin-bottom: 0;
+}
+.thoughts-post::before {
+	background: inherit;
+	z-index: 1;
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 7vmin;
+	height: 7vmin;
+	transform: translate(calc(-50% + 1px), -50%) rotate(-45deg);
+	clip-path: polygon(-15% -15%, 110% 0%, 0% 110%);
+}
+.thoughts-post:nth-of-type(2n)::before {
+	left: auto;
+	right: 0;
+	transform: translate(calc(50% - 1px), -50%) rotate(-45deg) scale(-1);
+}
+.thoughts-post::after {
+	content: '';
+	position: absolute;
+	top: 5vmin;
+	right: 45%;
+	bottom: 5vmin;
+	left: 5vmin;
+	outline-offset: -5vmin;
+	backdrop-filter: invert(1);
+	pointer-events: none;
+}
+.thoughts-post:nth-of-type(2n):after {
+	right: 5vmin;
+	left: 45%;
+}
+figure img {
+	min-width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+.thoughts-post>div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	padding: 1rem;
+}
+p {
+	font-size: 15px;
+	font-weight: lighter;
+	line-height: 1.8em;
+	text-shadow: none;
+	text-align: right;
+	margin-bottom: 60px;
+	width: 350px;
+	float: right;
+}
+/* -------------------------------------- */
+
+.ca-1 {
+	background: url("https://ceciliemanz.com/sites/default/files/styles/cm_medium/public/CM_1213_v1_lacqueredoak_WEB_0.jpg?itok=QmlJzAtI") no-repeat center center;
+}
+.ca-2 {
+	background: url("https://ceciliemanz.com/sites/default/files/styles/cm_medium/public/CECILIE%20MANZ%20-%20DEGREE%20-%20OREGON%20PINE%20-%20REFORM%20-%20PHOTO%20CREDITS%20-%20REFORM%20%288%29_0.jpg?itok=UnJEz6i-") no-repeat center center;
+}
+.ca-3 {
+	background: url("https://ceciliemanz.com/sites/default/files/styles/cm_medium/public/CECILIE%20MANZ%20-%20MOKU%20CHAIR%20-%20PHOTO%20CREDITS%20-%20ACTUS-NISSIN%20MOKKOU.jpg?itok=sEAY3JDv") no-repeat center center;
+}
+.ca-4 {
+	background: url("https://ceciliemanz.com/sites/default/files/styles/cm_medium/public/CECILIE%20MANZ%20-%20WORKSHOP%20-%20COFFEE%20TABLE%20-%20OAK%20-%20PHOTO%20CREDITS%20-%20CECILIE%20MANZ%20STUDIO_0.jpg?itok=Ng3823fz") no-repeat center center;
+}
+.ca-5 {
+	background: url("https://ceciliemanz.com/sites/default/files/styles/cm_medium/public/FREDERICIA_POST_CECILIE%20MANZ_PHOTO%20CREDITS_CECILIE%20MANZ%20STUDIO%20%284%29_1_0.jpg?itok=e6J4SPJD") no-repeat center center;
+}
+.ca-6 {
+	background: url("https://ceciliemanz.com/sites/default/files/styles/cm_medium/public/FREDERICIA_POST_CECILIE%20MANZ_PHOTO%20CREDITS_CECILIE%20MANZ%20STUDIO%20%284%29_1_0.jpg?itok=e6J4SPJD") no-repeat center center;
+}
+.clear-after:after, .main-wrapper .scroll-content .sc-row .content-article .article-info .ai-footer:after, .main-wrapper .scroll-content .sc-row:after, .main-wrapper .hero-image .hero-content .hc-footer:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.main-wrapper {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+.main-wrapper .hero-image {
+	z-index: 3;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: url("/Assests/images/Products/thoughts-bg.jpg") no-repeat center center fixed;
+	background-size: cover;
+	box-shadow: 0 5px 60px 10px rgba(0, 0, 0, 0.466);
+	transition: all 0.5s ease;
+}
+.main-wrapper .hero-image.browsing-content {
+	height: 40%;
+	background-position: center -150px;
+}
+.main-wrapper .hero-image.browsing-content:after {
+	opacity: 1;
+	height: 100%;
+}
+.main-wrapper .hero-image.browsing-content .hcft-icon.closed {
+	opacity: 0 !important;
+}
+.main-wrapper .hero-image.browsing-content .hcft-icon.opened {
+	opacity: 1 !important;
+}
+.main-wrapper .hero-image:after {
+	content: "";
+	display: block;
+	position: absolute;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0));
+	height: 50%;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	opacity: 0.65;
+	transition: all 0.5s ease;
+}
+.main-wrapper .hero-image .hero-content {
+	position: absolute;
+	z-index: 4;
+	width: 100%;
+	padding: 40px;
+	bottom: 0;
+}
+.main-wrapper .hero-image .hero-content .hc-label {
+	font-size: 30px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.main-wrapper .hero-image .hero-content .hc-desc {
+	font-size: 22px;
+	font-weight: 300;
+}
+.main-wrapper .hero-image .hero-content .hc-footer {
+	margin-top: calc(40px / 1.5);
+	line-height: 32px;
+	font-size: 14px;
+}
+.main-wrapper .hero-image .hero-content .hc-footer .hcf-divider {
+	float: left;
+	margin: 7px 10px;
+	height: 18px;
+	width: 1px;
+	background-color: white;
+}
+.main-wrapper .hero-image .hero-content .hc-footer .hcf-comments, .main-wrapper .hero-image .hero-content .hc-footer .hcf-shares {
+	float: left;
+	text-transform: uppercase;
+}
+.main-wrapper .hero-image .hero-content .hc-footer .hcf-comments .amount, .main-wrapper .hero-image .hero-content .hc-footer .hcf-shares .amount {
+	margin-right: 5px;
+	font-weight: 700;
+}
+.main-wrapper .hero-image .hero-content .hc-footer .hcf-toggle {
+	float: right;
+}
+.main-wrapper .hero-image .hero-content .hc-footer .hcf-toggle .hcft-label {
+	float: left;
+	line-height: 32px;
+	margin-right: 10px;
+	text-transform: uppercase;
+}
+.main-wrapper .hero-image .hero-content .hc-footer .hcf-toggle .hcft-icon-holder {
+	float: left;
+	position: relative;
+	width: 32px;
+	height: 32px;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.25);
+	transition: background-color 0.25s ease;
+}
+.main-wrapper .hero-image .hero-content .hc-footer .hcf-toggle .hcft-icon-holder:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.main-wrapper .hero-image .hero-content .hc-footer .hcf-toggle .hcft-icon-holder .hcft-icon {
+	cursor: pointer;
+	line-height: 32px;
+	width: 32px;
+	left: 0;
+	position: absolute;
+	font-size: 14px;
+	transition: all 0.5s ease;
+}
+.main-wrapper .hero-image .hero-content .hc-footer .hcf-toggle .hcft-icon-holder .hcft-icon.closed {
+	opacity: 1;
+}
+.main-wrapper .hero-image .hero-content .hc-footer .hcf-toggle .hcft-icon-holder .hcft-icon.opened {
+	opacity: 0;
+}
+.main-wrapper .scroll-content {
+	position: absolute;
+	top: 40%;
+	left: 0;
+	width: 100%;
+	overflow: auto;
+	height: calc(100% - 40%);
+}
+.main-wrapper .scroll-content .sc-row {
+	z-index: 1;
+}
+.main-wrapper .scroll-content .sc-row .content-article {
+	float: left;
+	cursor: pointer;
+	width: 50%;
+	height: 360px;
+	overflow: hidden;
+	position: relative;
+}
+.main-wrapper .scroll-content .sc-row .content-article:after {
+	content: "";
+	display: block;
+	position: absolute;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.1));
+	height: 100%;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	opacity: 1;
+	transition: opacity 0.25s ease;
+}
+.main-wrapper .scroll-content .sc-row .content-article:hover:after {
+	opacity: 0;
+}
+.main-wrapper .scroll-content .sc-row .content-article:hover .article-image {
+	transform: scale(1.1) !important;
+}
+.main-wrapper .scroll-content .sc-row .content-article .article-image {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	transform: scale(1);
+	transition: all 0.25s ease;
+}
+.main-wrapper .scroll-content .sc-row .content-article .article-number {
+	z-index: 2;
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+.main-wrapper .scroll-content .sc-row .content-article .article-info {
+	z-index: 2;
+	position: absolute;
+	bottom: 0;
+	padding: 40px;
+	text-transform: uppercase;
+}
+.main-wrapper .scroll-content .sc-row .content-article .article-info .ai-label {
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: calc(40px / 4);
+}
+.main-wrapper .scroll-content .sc-row .content-article .article-info .ai-desc {
+	font-size: 16px;
+	font-weight: 300;
+}
+.main-wrapper .scroll-content .sc-row .content-article .article-info .ai-footer {
+	line-height: 20px;
+	margin-top: calc(40px / 4);
+}
+.main-wrapper .scroll-content .sc-row .content-article .article-info .ai-footer .aif-comments, .main-wrapper .scroll-content .sc-row .content-article .article-info .ai-footer .aif-shares {
+	float: left;
+	font-size: 14px;
+}
+.main-wrapper .scroll-content .sc-row .content-article .article-info .ai-footer .aif-comments .amount, .main-wrapper .scroll-content .sc-row .content-article .article-info .ai-footer .aif-shares .amount {
+	font-weight: 700;
+	margin-right: 5px;
+}
+.main-wrapper .scroll-content .sc-row .content-article .article-info .ai-footer .aif-divider {
+	float: left;
+	height: 14px;
+	margin: 3px 10px;
+	width: 1px;
+	background-color: white;
+}

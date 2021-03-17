@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>HATCH - in-product </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HATCH">
+
+    <!-- CSS Files================================================== -->
+    <link rel="shortcut icon" href="../images/hatch-favicon/favicon.ico" />
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="../css/jpreloader.css" type="text/css">
+    <link rel="stylesheet" href="../css/animate.css" type="text/css">
+    <link rel="stylesheet" href="../css/plugin.css" type="text/css">
+    <link rel="stylesheet" href="../css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="../css/owl.theme.css" type="text/css">
+    <link rel="stylesheet" href="../css/owl.transitions.css" type="text/css">
+    <link rel="stylesheet" href="../css/A1-style.css" type="text/css">
+    <link rel="stylesheet" href="../css/twentytwenty.css" type="text/css">
+    <link rel="stylesheet" href="../css/chatpopup.css" type="text/css">
+    <link rel="stylesheet" href=".././css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href=".././css/search.css" type="text/css">
+    <!-- custom background -->
+    <link rel="stylesheet" href="../css/bg.css" type="text/css">
+    <!-- color scheme -->
+    <link rel="stylesheet" href="../css/color.css" type="text/css">
+    <!-- revolution slider -->
+    <link rel="stylesheet" href="../rs-plugin/css/settings.css" type="text/css">
+    <link rel="stylesheet" href="../css/rev-settings.css" type="text/css">
+    <!-- load fonts -->
+    <link rel="stylesheet" href="../fonts/Gilroy/style.css" type="text/css">
+    <link rel="stylesheet" href="../fonts/font-awesome/css/font-awesome.css" type="text/css">
+</head>
+<body>
+    <!-- ==================Pop-CHAT==================== -->
+	<div class="chatpopup-widget show">
+		<div class="chatpopup-widget__body" style="display: none;">
+			<div class="chatpopup-widget__body-header">
+				<span class="chatpopup-icon-close chatpopup-widget-close"><svg viewbox="0 0 352 512" xmlns="http://www.w3.org/2000/svg">
+				<path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" fill="currentColor"></path></svg></span> Live Chat
+			</div>
+			<div class="chatpopup-support-persons">
+				<div class="chatpopup-support-person">
+					<div class="chatpopup-support-person__img"><img alt="Live Chat" src="images/ui/img/ToChatBe.png"></div>
+					<div class="chatpopup-support-person__meta">
+						<div class="chatpopup-support-person__name">
+							Customer Service
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="chatpopup-input-wrapper">
+				<span class="chatpopup-blinking-cursor" style="display: none;">|</span> <input id="chatpopup-type-and-chat-input" name="message_to_send" placeholder="How can i help you... ?" type="text">
+				<div class="chatpopup-input-icon"><img alt="//" class="send-wa" src="https://www.citypng.com/public/uploads/preview/-41601136190yenci08e6p.png" width="30"></div>
+			</div>
+		</div>
+		<div class="chatpopup-widget__trigger">
+			<span class="chatpopup-icon-whatsapp"></span>
+			<div class="chatpopup-input-icon">
+				<span class="chatpopup-icon-whatsapp"><img alt="//" src="images/ui/img/chat-bubble1.png" width="30"></span>
+			</div><span class="chatpopup-icon-whatsapp"></span>
+		</div>
+	</div>
+	<!--========live chat end============-->
+    <div id="wrapper">
+        <!-- header begin -->
+        <header class="transparent">
+            <div class="info">
+                <div class="container-fluid">
+                    <div class="row-fluid">
+                        <div class="col-md-12">
+                            <div class="column">
+                                Working Hours Monday - Friday <span class="id-color"><strong>08:00-16:00</strong></span>
+                            </div>
+                            <div class="column">
+                                Toll Free <span class="id-color"><strong>1800.899.900</strong></span>
+                            </div>
+                            <!-- social icons -->
+                            <div class="column social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-youtube"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                            <!-- social icons close -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="col-md-12">
+                        <!-- logo begin -->
+                        <div id="logo">
+                            <a href="/index.html">
+                                <img class="logo" src="/Assests/images/hatch-logo/hatch_arc_logo.png" alt="hatch" />
+                            </a>
+                        </div>
+                        <!-- logo close -->
+                         <!-- search bar -->
+						<div class="search">
+							<input id="searchInput" onkeyup="hatchSearch()" placeholder="&nbsp;" type="text">
+							<div>
+								<svg>
+								<use xlink:href="#path"></use></svg>
+							</div>
+						</div>
+                        <!-- search bar -->
+                        <ul id="hatch-list">
+                            <li><a href="../Architecture.html">Architecture</a></li>
+                            <li><a href="../blog.html">blog</a></li>
+                            <li><a href="../Team.html">team</a></li>
+                            <li><a href="../Contact.html">contact</a></li>
+                        </ul>
+                        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+								  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 28" id="path">
+										<path d="M32.9418651,-20.6880772 C37.9418651,-20.6880772 40.9418651,-16.6880772 40.9418651,-12.6880772 C40.9418651,-8.68807717 37.9418651,-4.68807717 32.9418651,-4.68807717 C27.9418651,-4.68807717 24.9418651,-8.68807717 24.9418651,-12.6880772 C24.9418651,-16.6880772 27.9418651,-20.6880772 32.9418651,-20.6880772 L32.9418651,-29.870624 C32.9418651,-30.3676803 33.3448089,-30.770624 33.8418651,-30.770624 C34.08056,-30.770624 34.3094785,-30.6758029 34.4782612,-30.5070201 L141.371843,76.386562" transform="translate(83.156854, 22.171573) rotate(-225.000000) translate(-83.156854, -22.171573)"></path>
+								  </symbol>
+							 </svg>
+                        <!-- search bar closed -->
+
+                        <!-- small button begin -->
+                        <div id="mo-button-open">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
+                        <!-- small button close -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+        <!-- menu overlay begin -->
+        <div id="menu-overlay" class="slideDown">
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="col-md-12">
+                        <div id="mo-button-close">
+                            <div class="line-1"></div>
+                            <div class="line-2"></div>
+                        </div>
+                        <div class="pt80 pb80">
+                            <div class="text-left mo-nav" style="margin-left:40px;">
+
+                                <div class="spacer-double"></div>
+                                <!-- mainmenu begin -->
+                                <ul id="mo-menu" class="mm-style-1 mm-hover-underline">
+                                    <li><a href="/index.html">Home<span></span></a></li>
+                                    <li><a href="../architecture.html">Architecture<span></span></a></li>
+                                    <li><a href="../products.html">Products<span></span></a></li>
+                                    <li><a href="../interior.html">Interior<span></span></a></li>
+                                    <li><a href="../collection.html">Collection<span></span></a></li>
+                                    <li><a href="../team.html">Team<span></span></a></li>
+                                    <li><a href="../community.html">Community<span></span></a></li>
+                                    <li><a href="../blog.html">Blog<span></span></a></li>
+                                    <li><a href="../gallery.html">Gallery<span></span></a></li>
+                                    <li><a href="../contact.html">Contact<span></span></a></li>
+                                </ul>
+                                <!-- mainmenu close -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- menu overlay close -->
+
+
+    <!-- revolution slider begin -->
+    <section id="section-welcome-in-pro" class="full-height text-light" data-speed="3" data-type="background">
+        <div class="text-center center-y">
+            <div class="spacer-double"></div>
+            <h1 class="title"> <strong class="id-color">O8 & O4</strong> </h1>
+            <div class="spacer-single"></div>
+            <div class="spacer-double"></div>
+        </div>
+    </section>
+    <!-- revolution slider end -->
+
+
+
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 col-sm-12 col-xs-12" data-wow-delay="0s" style="visibility: visible; animation-delay: 0s; animation-name: fadeInUp; background-size: cover;">
+
+                    <ul class="mb-3 nav nav-pills np-1" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-opt4-tab" data-toggle="pill" href="#pills-opt4" role="tab" aria-controls="pills-contact" aria-selected="false">Details</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" id="pills-opt1-tab" data-toggle="pill" href="#pills-opt1" role="tab" aria-controls="pills-home" aria-selected="true">Sketch</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-opt2-tab" data-toggle="pill" href="#pills-opt2" role="tab" aria-controls="pills-profile" aria-selected="false">
+                                Assembly</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-opt3-tab" data-toggle="pill" href="#pills-opt3" role="tab" aria-controls="pills-contact" aria-selected="false"> Packaging </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent" style="background-size: cover;">
+                        
+                        <div class="tab-pane fade" id="pills-opt2" role="tabpanel" aria-labelledby="pills-opt2-tab" style="background-size: cover;">
+                            <div class="row" >
+
+                                <div class="container-s">
+                                    <div class="card">
+                                      <img src="http://lusive.com/images/uploads/content/9MostUnique01.jpg" alt="1">
+                                  
+                                      <div class="card__head">1</div>
+                                    </div>
+                                    <div class="card">
+                                      <img src="https://i.pinimg.com/originals/ea/37/66/ea3766b8339edc8e4b6f77d8ac4bae9e.jpg" alt="2">
+                                      <div class="card__head">2</div>
+                                    </div>
+                                    <div class="card">
+                                      <img src="https://i.pinimg.com/originals/ba/46/f1/ba46f1f1c0831c49143196fe80bc9c6a.jpg" alt="3">
+                                      <div class="card__head">3</div>
+                                    </div>
+                                    <div class="card">
+                                      <img src="https://jamesvanvossel.com/wp-content/uploads/2019/08/WanderfulTour_Noen-2-667x1000.jpg" alt="4">
+                                      <div class="card__head">4</div>
+                                    </div>
+                                    <div class="card">
+                                      <img src="https://content.ngv.vic.gov.au/col-images/api/Fa104311/large" alt="5">
+                                      <div class="card__head">5</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-opt3" role="tabpanel" aria-labelledby="pills-opt3" style="background-size: cover;">
+                            <div class="row" style="background-size: cover;">
+                                <div class="col-lg-3 col-md-6 hatchit">
+                                    <!-- team member -->
+                                    <a class="image-popup-no-margins" href="../images/Product/TholothDiningO8andO4/A_2CoronaCamera008.JPG" >
+
+                                        <div class="de-team-list">
+                                            <div class="team-pic">
+                                                <img src="../images/Product/TholothDiningO8andO4/A_2CoronaCamera008.JPG" class="img-responsive" alt="CoronaCamera" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- team close -->
+                                </div>
+                                <div class="col-lg-3 col-md-6 hatchit">
+                                    <!-- team member -->
+                                    <a class="image-popup-no-margins" href="../images/Product/TholothDiningO8andO4/Closup_1.jpg"  >
+                                        <div class="de-team-list">
+                                            <div class="team-pic">
+                                                <img src="../images/Products/TholothDiningO8andO4/Closup_1.jpg" class="img-responsive" alt="Closup_1" />
+                                            </div>
+
+                                        </div>
+                                    </a>
+                                        <!-- team close -->
+                                </div>
+                                <div class="col-lg-3 col-md-6 hatchit">
+                                    <!-- team member -->
+                                    <a class="image-popup-no-margins" href="../images/Products/TholothDiningO8andO4/A_2CoronaCamera008.JPG" >
+                                        <div class="de-team-list">
+                                            <div class="team-pic">
+                                                <img src="../images/Products/TholothDiningO8andO4/A_2CoronaCamera008.JPG" class="img-responsive" alt="CoronaCamera" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- team close -->
+                                </div>
+                                <div class="col-lg-3 col-md-6 hatchit">
+                                    <!-- team member -->
+                                    <a class="image-popup-no-margins" href="../images/Products/TholothDiningO8andO4/Closup_1.jpg" >
+                                        <div class="de-team-list">
+                                            <div class="team-pic">
+                                                <img src="../images/Products/TholothDiningO8andO4/Closup_1.jpg" class="img-responsive" alt="closeup" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- team close -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade active show" id="pills-opt4" role="tabpanel" aria-labelledby="pills-opt4-tab" style="background-size: cover;">
+                            <div class="row" style="background-size: cover;">
+
+                                <div class="col-lg-4 vcenter" style="background-size: cover; float:none; margin:auto;">
+                                    <div class="col-lg-12">
+                                        <!-- <h3>Project Details
+                                            <span class="tiny-border"></span>
+                                        </h3> -->
+
+                                        <div>
+                                            <div class="page-inner">
+                                          
+                                              <div class="row">
+                                                <div class="el-wrapper" style=" float:none; margin:auto;">
+                                                  <div class="box-up"  style="object-fit: contain">
+                                                    <img class="img" src="/Assests/images/Product/TholothDiningO8andO4/product-details-o4.png" alt="o8-o4"
+                                                     style=" background-size: cover;
+                                                    background-position: center;
+                                                    background-attachment: fixed;
+                                                    height: 100%;">
+                                                    <div class="img-info">
+                                                      <div class="info-inner">
+                                                            <!-- <div class="info-text">
+                                                                <span class="title">Date</span>
+                                                                <span class="val">March 2021</span>
+                                                            </div> -->
+                                                      </div>
+                                                      <div class="a-size">
+                                                          <div class="project-details" style="color: #ffffff; margin-bottom: 0px;">
+                                                        <div class="info-text">
+                                                            <span class="title">Date</span>
+                                                            <span class="val">March 2021</span>
+                                                        </div>
+            
+                                                        <div class="info-text">
+                                                            <span class="title">Timeline</span>
+                                                            <span class="val">2 weeks</span>
+                                                        </div>
+            
+            
+                                                        <div class="info-text">
+                                                            <span class="title">Category</span>
+                                                            <span class="val">Dining</span>
+                                                        </div>
+            
+                                
+                                                    </div></div>
+                                                    </div>
+                                                  </div>
+                                          
+                                                  <div class="box-down" style="top: -20px;">
+                                                    <div class="h-bg">
+                                                      <div class="h-bg-inner"></div>
+                                                    </div>
+                                          
+                                                    <a class="cart" href="#">
+                                                      <span class="price"><i class="fa fa-fw" aria-hidden="true" style="font-size: 20px;"></i>
+                                                      </span>
+                                                      <span class="add-to-cart">
+                                                        <span class="txt">Buy</span>
+                                                      </span>
+                                                    </a>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                      
+                                        <h4>The idea behind it  
+                                        <span class="tiny-border"></span>
+                                        </h4>
+                                        <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+                                        <div>
+                                            <h3 class="mb20">Product Design
+                                                <span class="tiny-border"></span>
+                                            </h3>
+                                            <div class="sketch">
+                                                <a class="sketch-a" href="/Assests/images/Product/TholothDiningO8andO4/HatchDiningTableO4orange.pdf" download><span>Download-o4</span><span>PDF</span></a>
+                                                <!-- <h3 style="margin-left: 20px;"> O4</h3> -->
+                                                <a class="sketch-a" href="/Assests/images/Product/TholothDiningO8andO4/HatchDiningTableO8Orange.pdf" download><span>Download-o8</span><span>PDF</span></a>
+                                                <!-- <h3 style="margin-left: 20px;"> <span> O8</span> </h3> -->
+                                                <!-- <a class="sketch-a" href="#" download><span>Download</span><span>WORD</span></a>
+                                                <a class="sketch-a" href="#" download><span>Download</span><span>XSL</span></a> -->
+                                            </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-8 vcenter" style="background-size: cover;">
+                                    <img src="../images/Product/TholothDiningO8andO4/O8ExplodedBlack2ThickLines-01.jpg" class="img-fluid" alt="o8">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="no-top no-bottom">
+        <div class="container-float">
+            <div class="row align-items-center no-gutters">
+                <div class="col-md-12">
+                    <div id="gallery-carousel-1" class="owl-carousel">
+                        <!-- gallery item -->
+                        <div class="item">
+                            <div class="picframe">
+                                <a class="image-popup-no-margins" href="/Assests/images/Product/TholothDiningO8andO4/Artboard04.jpg" >
+                                    <span class="overlay-v"><span class="pf_text"><span class="project-name">O8</span></span>
+                                    </span>
+                                    <img src="/Assests/images/Product/TholothDiningO8andO4/Artboard04.jpg" alt="o4" />
+                                </a>
+
+                            </div>
+                        </div>
+                        <!-- close gallery item -->
+                        <!-- gallery item -->
+                        <div class="item">
+                            <div class="picframe">
+                                <a class="image-popup-no-margins" href="/Assests/images/Product/TholothDiningO8andO4/Artboard08.jpg" >
+                                    <span class="overlay-v">
+											  <span class="pf_text">
+												  <span class="project-name">O4</span>
+                                    </span>
+                                    </span>
+                                    <img src="/Assests/images/Product/TholothDiningO8andO4/Artboard08.jpg" alt="o8" />
+                                </a>
+                            </div>
+                        </div>
+                        <!-- close gallery item -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-gallery-carousel" aria-label="section" class="no-top no-bottom" data-bgcolor="rgba(0,0,0,.1)">
+        <div class="container-fluid">
+            <div class="row align-items-center no-gutters">
+                <div class="text-center col-md-3">
+                    <div class="spacer-single"></div>
+                    <h3 class="no-bottom">Gallery</h3>
+                    <div class="spacer-single"></div>
+                </div>
+                <div class="col-md-9">
+                    <div class="owl-custom-nav">
+                        <a class="btn-next"></a>
+                        <a class="btn-prev"></a>
+                    </div>
+                    <div id="gallery-carousel-4" class="owl-carousel owl-theme owl-slide">
+                        <!-- gallery item -->
+                        <div class="item s2">
+                            <div class="picframe hatchit">
+                                <a class="image-popup-no-margins" href="/Assests/images/Products/TholothDiningO8andO4/Larsen.png" >
+                                    <span class="overlay-v">
+										<span class="pf_text">
+											<span class="project-name"></span>
+                                    </span>
+                                    </span>
+
+                                    <img src="/Assests/images/Product/TholothDiningO8andO4/Azalai-2.jpg" alt="azalai" />
+                                </a>
+                            </div>
+                        </div>
+                        <!-- close gallery item -->
+                        <!-- gallery item -->
+                        <div class="item s2">
+                            <div class="picframe hatchit">
+                                <a class="image-popup-no-margins" href="/Assests/images/Product/TholothDiningO8andO4/O8DiningLarsen.png" >
+                                    <span class="overlay-v">
+										<span class="pf_text">
+											<span class="project-name"></span>
+                                    </span>
+                                    </span>
+                                    <img src="/Assests/images/Product/TholothDiningO8andO4/O8DiningLarsen.png" alt="DiningLarsen" />
+                                </a>
+                            </div>
+                        </div>
+                        <!-- close gallery item -->
+                        <!-- gallery item -->
+                        <div class="item s2">
+                            <div class="picframe hatchit">
+                                <a class="image-popup-no-margins" href="/Assests/images/Product/TholothDiningO8andO4/Closup_2.png" >
+                                    <span class="overlay-v">
+										<span class="pf_text">
+											<span class="project-name"></span>
+                                    </span>
+                                    </span>
+                                    <img src="/Assests/images/Product/TholothDiningO8andO4/Closup_2.png" alt="Closup_2" />
+
+                                </a>
+                            </div>
+                        </div>
+                        <!-- close gallery item -->
+                        <!-- gallery item -->
+                        <div class="item s2">
+                            <div class="picframe hatchit">
+                                <a class="image-popup-no-margins" href="/Assests/images/Product/TholothDiningO8andO4/O8OveralRender.png">
+                                    <span class="overlay-v">
+										<span class="pf_text">
+											<span class="project-name"></span>
+                                    </span>
+                                    </span>
+                                    <img src="/Assests/images/Product/TholothDiningO8andO4/O8OveralRender.png" alt="O8Overal" />
+                                </a>
+                            </div>
+                        </div>
+                        <!-- close gallery item -->
+                        <!-- gallery item -->
+                         <div class="item s2">
+                            <div class="picframe hatchit">
+                                <a class="image-popup-no-margins" href="/Assests/images/Product/TholothDiningO8andO4/O8Closup.jpg" >
+                                    <span class="overlay-v">
+										<span class="pf_text">
+											<span class="project-name"></span>
+                                    </span>
+                                    </span>
+                                    <img src="/Assests/images/Product/TholothDiningO8andO4/O8Closup.jpg" alt="O8Closup" />
+                                </a>
+                            </div>
+                        </div> 
+                        <!-- close gallery item -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                        <div class="text-center col-md-9" style="float:none; margin:auto;">
+							<div class="owl-carousel owl-theme carousel-single-navi">
+								<div class="twentytwenty-container shadow-soft ">
+                                    <img src="../images/Product/TholothDiningO8andO4/O8Sketch.jpg" alt="" class="img-responsive" />
+                                    <img src="../images/Product/TholothDiningO8andO4/O8ElevationDimension.jpg" alt="o8" class="img-responsive" />
+                                </div>
+								<div class="twentytwenty-container shadow-soft">
+                                    <img src="../images/Product/TholothDiningO8andO4/3+.jpg" alt="" class="img-responsive" />
+                                    <img src="../images/Product/TholothDiningO8andO4/O4ElevationDimension.jpg" alt="o8" class="img-responsive" />
+                                </div>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer begin -->
+    <footer class="style-2">
+        <div class="container">
+            <div class="row align-items-middle">
+                <div class="col-md-12" style="text-align: center;">
+                    <a href="../index.html"><img class="logo" src="../images/hatch-logo/hatch_arc_logo.png" alt="hatch" />
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+        <a href="#body" id="back-to-top" aria-label="to-top"></a>
+    </footer>
+    <!-- footer close -->
+    </div>
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jpreLoader.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.isotope.min.js"></script>
+    <script src="../js/easing.js"></script>
+    <script src="../js/jquery.flexslider-min.js"></script>
+    <script src="../js/jquery.scrollto.js"></script>
+    <script src="../js/owl.carousel.js"></script>
+    <script src="../js/jquery.countTo.js"></script>
+    <script src="../js/classie.js"></script>
+    <script src="../js/video.resize.js"></script>
+    <script src="../js/validation.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/jquery.stellar.min.js"></script>
+    <script src="../js/enquire.min.js"></script>
+    <script src="../js/jquery.event.move.js"></script>
+    <script src="../js/jquery.twentytwenty.js"></script>
+    <script src="//cdn.jsdelivr.net/holder/2.4.0/holder.js"></script>
+    <script src="../js/image_norightclick.js"></script>
+    <!-- SLIDER REVOLUTION SCRIPTS  -->
+    <script src="../rs-plugin/js/jquery.rs.plugins.min.js"></script>
+    <script src="../rs-plugin/js/jquery.rs.revolution.min.js"></script>
+    <script src="../js/A1.js"></script>
+    <script src="../js/search.js"></script>
+    <script>
+        $(window).on("load", function() {
+            $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({
+                default_offset_pct: 0.5
+            });
+            $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({
+                default_offset_pct: 0.3,
+                orientation: 'vertical'
+            });
+        });
+    </script>
+</body>
+
+</html>
